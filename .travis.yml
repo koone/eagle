@@ -24,9 +24,9 @@ install:
   - nvm install 4
   - chmod ugo+x deploy.sh
 script:
+  - ./deploy.sh
   - ll ./
   - ll ./eagle-server-assembly/target
-  - ./deploy.sh
 jdk:
   - oraclejdk8
 branch:
