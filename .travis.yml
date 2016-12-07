@@ -25,8 +25,8 @@ install:
   - chmod ugo+x deploy.sh
 script:
   - ./deploy.sh
-  - ll ./
-  - ll ./eagle-server-assembly/target
+  - ls ./
+  - ls ./eagle-server-assembly/target
 jdk:
   - oraclejdk8
 branch:
