@@ -26,7 +26,7 @@ install:
 script:
   - ./deploy.sh
   - ls ./
-  - ls ./eagle-server-assembly/target
+  - ls ./eagle-server-assembly/
 jdk:
   - oraclejdk8
 branch:
