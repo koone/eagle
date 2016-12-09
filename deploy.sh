@@ -45,13 +45,8 @@ trap 'error_handler' ERR
 
 # Set up a repeating loop to send some output to Travis.
 
-<<<<<<< HEAD
 bash -c "while true; do echo \$(date) - building ...; sleep $PING_SLEEP; done" &
 PING_LOOP_PID=$!
-=======
-#bash -c "while true; do echo \$(date) - building ...; sleep $PING_SLEEP; done" &
-#PING_LOOP_PID=$!
->>>>>>> 760aa3ec3f1fae9bf32bda4ee0823ec22b11427a
 
 # My build is using maven, but you could build anything with this, E.g.
 # your_build_command_1 >> $BUILD_OUTPUT 2>&1
@@ -62,11 +57,7 @@ mvn clean package -Dmaven.test.skip=true --quiet >> $BUILD_OUTPUT 2>&1
 dump_output
 
 # nicely terminate the ping output loop
-<<<<<<< HEAD
 kill $PING_LOOP_PID
-=======
-#kill $PING_LOOP_PID
->>>>>>> 760aa3ec3f1fae9bf32bda4ee0823ec22b11427a
 
 
 echo "Pushing with force ..."
